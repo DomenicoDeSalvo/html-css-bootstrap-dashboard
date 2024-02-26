@@ -9,6 +9,51 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        
+        <div id="app">
+            <!-- HEADER-NAV -->
+            <header>
+                <nav class="main__nav py-3">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- LOGO -->
+                            <img src="./img/logo.svg" alt="logo1" class="col-auto logo_desktop d-none d-lg-block">
+                            <img src="./img/mobile-logo.png" alt="logo2" class="col-auto logo d-lg-none">
+                            <!-- SEARCH BAR -->
+                            <div class="col nav__search_bar flex-grow-1 position-relative">
+                                <input type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                            <!-- ICONS -->
+                            <ul class="col-auto nav__list d-flex list-unstyled mb-0 gap-3">
+                                <li class="desktop_icon d-none d-lg-block">
+                                    <a href=""><i class="fa-solid fa-list-ul"></i></a>
+                                </li>
+                                <li class="desktop_icon d-none d-lg-block">
+                                    <a href=""><i class="fa-solid fa-circle-question"></i></a>
+                                </li>
+                                <li class="desktop_icon d-none d-lg-block">
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </li>
+                                <li>
+                                    <!-- MENU -->
+                                    <div class="nav__menu position-relative">
+                                        <div class="nav__menu__icon"><i class="fa-solid fa-bell"></i></div>
+                                        <div class="card nav__menu__content">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item border-0">Profilo</li>
+                                                <li class="list-group-item border-0">Fatturazione</li>
+                                                <li class="list-group-item border-0">Logout</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <aside></aside>
+            <main></main>
+        </div>
     </body>
 </html>
