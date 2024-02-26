@@ -10,50 +10,83 @@
     </head>
     <body>
         <div id="app">
-            <!-- HEADER-NAV -->
-            <header>
-                <nav class="main__nav py-3">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- LOGO -->
-                            <img src="./img/logo.svg" alt="logo1" class="col-auto logo_desktop d-none d-lg-block">
-                            <img src="./img/mobile-logo.png" alt="logo2" class="col-auto logo d-lg-none">
-                            <!-- SEARCH BAR -->
-                            <div class="col nav__search_bar flex-grow-1 position-relative">
-                                <input type="text" placeholder="Prova a cercare: Lezioni di Laravel">
-                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                            </div>
-                            <!-- ICONS -->
-                            <ul class="col-auto nav__list d-flex list-unstyled mb-0 gap-3">
-                                <li class="desktop_icon d-none d-lg-block">
-                                    <a href=""><i class="fa-solid fa-list-ul"></i></a>
-                                </li>
-                                <li class="desktop_icon d-none d-lg-block">
-                                    <a href=""><i class="fa-solid fa-circle-question"></i></a>
-                                </li>
-                                <li class="desktop_icon d-none d-lg-block">
-                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <!--NAV -->
+            <nav class="main__nav py-3">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- LOGO -->
+                        <img src="./img/logo.svg" alt="logo1" class="col-auto logo_desktop d-none d-lg-block">
+                        <img src="./img/mobile-logo.png" alt="logo2" class="col-auto logo d-lg-none">
+                        <!-- SEARCH BAR -->
+                        <div class="col nav__search_bar flex-grow-1 position-relative">
+                            <input type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                        <!-- ICONS -->
+                        <ul class="col-auto nav__list d-flex list-unstyled mb-0 gap-3">
+                            <li class="desktop_icon d-none d-lg-block">
+                                <a href=""><i class="fa-solid fa-list-ul"></i></a>
+                            </li>
+                            <li class="desktop_icon d-none d-lg-block">
+                                <a href=""><i class="fa-solid fa-circle-question"></i></a>
+                            </li>
+                            <li class="desktop_icon d-none d-lg-block">
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+                            <li>
+                                <!-- MENU -->
+                                <div class="nav__menu position-relative">
+                                    <div class="nav__menu__icon"><i class="fa-solid fa-bell"></i></div>
+                                    <div class="card nav__menu__content">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0">Profilo</li>
+                                            <li class="list-group-item border-0">Fatturazione</li>
+                                            <li class="list-group-item border-0">Logout</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- MAIN -->
+            <main class="main__section">
+                <div class="ms_container">
+                    <div class="ms_row">
+                        <!-- HEADER -->
+                        <section class="side_bar d-flex flex-column align-items-center"> 
+                            <ul class="side_bar__list my-4 list-unstyled mx-4 flex-grow-1">
+                                <li>
+                                    <a href="">
+                                        <span class="side_bar__list__icon"><i class="fa-solid fa-house"></i></span>
+                                        <span class="d-none d-lg-inline-block ms-1 ">Home</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <!-- MENU -->
-                                    <div class="nav__menu position-relative">
-                                        <div class="nav__menu__icon"><i class="fa-solid fa-bell"></i></div>
-                                        <div class="card nav__menu__content">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item border-0">Profilo</li>
-                                                <li class="list-group-item border-0">Fatturazione</li>
-                                                <li class="list-group-item border-0">Logout</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <a href="">
+                                        <span class="side_bar__list__icon"><i class="fa-solid fa-chart-simple"></i></span>
+                                        <span class="d-none d-lg-inline-block ms-2">Stats</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="side_bar__list__icon"><i class="fa-solid fa-signal"></i></span>
+                                        <span class="d-none d-lg-inline-block ms-1">Signal</span>
+                                    </a>
                                 </li>
                             </ul>
-                        </div>
+                            <div class="mt-auto">
+                                <a href="">
+                                    <span class="side_bar__list__icon"><i class="fa-solid fa-gear"></i></span>
+                                    <span class="d-none d-lg-inline-block ms-2">Admin</span>
+                                </a>
+                            </div>
+                        </section>
+                        <section></section>
                     </div>
-                </nav>
-            </header>
-            <aside></aside>
-            <main></main>
+                </div>
+            </main>
         </div>
     </body>
 </html>
