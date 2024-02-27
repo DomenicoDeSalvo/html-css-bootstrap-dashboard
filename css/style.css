@@ -6,29 +6,18 @@ a{
 
 /* LAYOUT */
 
-#app{
-    height: 100vh;
-    max-width: 100%;
-}
-
 :root{
     --background:#F8F9FA;
     --bell:#FF8F00;
     --side_bar:#051E34;
 }
 
-.ms_row{
-    display: flex;
-}
-
-.ms_container{
-    width: 100%;
-}
-
 /* NAV */
 
 .main__nav{
     background-color: var(--background);
+    height: 70px;
+    padding: 15px 0;
 }
 
 .main__nav .row{
@@ -39,10 +28,12 @@ a{
 
 .logo_desktop{
     width: 170px;
+    cursor: pointer;
 }
 
 .logo{
     width: 70px;
+    cursor: pointer;
 }
 
 /* SEARCH-BAR */
@@ -53,6 +44,7 @@ a{
     border: none;
     border-radius: 8px;
     padding-left: 30px;
+    height: 40px;
 }
 
 .nav__search_bar i {
@@ -90,20 +82,17 @@ a{
 
 /* MAIN */
 
-.main__section,
-.ms_container,
-.ms_row{
-    height: 100%;
+ .main__section{
+    display: flex;
+    flex-grow: 1;
 }
 
 /* HEADER */
 
 .side_bar{
-    color: white;
     background-image: url(../img/sidebar-bg.png);
     flex-shrink: 0;
     width: 70px;
-    height: 100%;
     background-color: var(--side_bar)
 }
 
@@ -114,10 +103,6 @@ a{
     
 }
 
-.side_bar__list{
-    height: 100%;
-}
-
 .side_bar a:hover{
     background-color: lightgrey;
 }
@@ -125,20 +110,18 @@ a{
 /* CONTENT HEADER */
 
 .content__header{
-    color: white;
     background-color: #1B72E8;
-    overflow-y: auto;
 }
 
 .blue_highlight{
     background-color: #165BBA;
     border-radius: 20px;
-    line-height: 16px;
     padding: 4px 10px;
-    vertical-align: middle;
-    text-align: center;
     display: inline-block;
     cursor: pointer;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 
