@@ -4,6 +4,7 @@ a{
     text-decoration: none;
 }
 
+
 /* LAYOUT */
 
 :root{
@@ -84,6 +85,10 @@ a{
 }
 
 /* APP BODY */
+
+.app__body{
+    height: calc(100% - 70px);
+}
 
 /* HEADER */
 
