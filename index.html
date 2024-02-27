@@ -54,7 +54,7 @@
             <div class="app__body d-flex flex-grow-1">
                 <!-- HEADER -->
                 <header class="side_bar text-white"> 
-                    <ul class="side_bar__list h-100 mt-4 list-unstyled mx-4 d-flex flex-column align-items-center">
+                    <ul class="side_bar__list h-100 pt-4 mb-0 list-unstyled mx-4 d-flex flex-column align-items-center gap-2">
                         <li>
                             <a href="" class=" ">
                                 <span class="side_bar__list__icon"><i class="fa-solid fa-house"></i></span>
@@ -73,7 +73,7 @@
                                 <span class="d-none d-lg-inline-block ms-1">Signal</span>
                             </a>
                         </li>
-                        <li class="mt-auto mb-4">
+                        <li class="mt-auto pb-4">
                             <a href="" class=" ">
                                 <span class="side_bar__list__icon"><i class="fa-solid fa-gear"></i></span>
                                 <span class="d-none d-lg-inline-block ms-2">Admin</span>
@@ -85,7 +85,7 @@
                 <main class="d-flex flex-grow-1 flex-column">
                     <!-- CONTENT HEADER -->
                     <section class="content__header text-white">
-                        <div class="row align-content-start mx-2">
+                        <div class="row align-content-start g-0 mx-2">
                             <div class="col-12 col-md-4 col-lg-3 order-md-3 py-4">
                                 <span>Nuovo Studente</span>
                                 <button type="button" class="btn btn-outline-light mx-2 text-center">
@@ -113,8 +113,183 @@
                         </div>
                     </section>
                     <!-- CONTENT -->
-                    <section>
-                        <div>ciao</div>
+                    <section class="content overflow-y-auto">
+                        <div class="row m-3 align-content-start">
+                            <div class="col col-12 col-lg-9">
+                                <div class="card">
+                                    <!-- NEXT-CLASSES TAB -->
+                                    <div class="card-header h2">Prossime classi</div>
+                                    <table class="next_classes table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data inizio</th>
+                                                <th class="d-none d-md-block" scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 75</span>
+                                                </td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge done">Done</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 76</span>
+                                                </td>
+                                                <td>16 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge done">Done</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 77</span>
+                                                </td>
+                                                <td>17 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge on_going">Process</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 78</span>
+                                                </td>
+                                                <td>18 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge done">Done</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 79</span>
+                                                </td>
+                                                <td>19 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge failed">Failed</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 80</span>
+                                                </td>
+                                                <td>20 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge done">Done</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 81</span>
+                                                </td>
+                                                <td>21 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge failed">Failed</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">
+                                                    <img src="./img/class-avatar.jpg" alt="#">
+                                                    <span>Classe 82</span>
+                                                </td>
+                                                <td>22 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td> 
+                                                    <div class="sm_badge done">Done</div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark text-center btn-sm">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                              </tr>
+                                          
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card col col-12 col-lg-3">3</div>
+                        </div>        
                     </section>
                 </main>
             </div>

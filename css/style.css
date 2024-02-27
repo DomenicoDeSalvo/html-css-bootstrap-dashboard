@@ -123,6 +123,42 @@ a{
     text-align: center;
 }
 
+/* CONTENT */
+
+.content .card{
+    background-color: white;
+}
+
+/* NEXT CLASSES TAB */
+
+.next_classes img{
+    width: 30px;
+}
+
+.next_classes i{
+    font-size: 14px;
+}
+
+.sm_badge{
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.sm_badge.done{
+    background-color: green;
+}
+
+.sm_badge.on_going{
+    background-color:#FFC107;;
+}
+
+.sm_badge.failed{
+    background-color: red;
+}
 
 
 
