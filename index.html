@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div class="app d-flex flex-column vh-100">
+        <div id="app" class="d-flex flex-column vh-100">
             <!--NAV -->
             <nav class="main__nav">
                 <div class="container-fluid">
@@ -50,8 +50,8 @@
                     </div>
                 </div>
             </nav>
-            <!-- MAIN -->
-            <main class="main__section">
+            <!-- APP BODY -->
+            <div class="app__body d-flex flex-grow-1">
                 <!-- HEADER -->
                 <header class="side_bar text-white"> 
                     <ul class="side_bar__list h-100 mt-4 list-unstyled mx-4 d-flex flex-column align-items-center">
@@ -81,37 +81,43 @@
                         </li>
                     </ul>
                 </header>
-                <!-- CONTENT HEADER -->
-                <section class="content__header flex-grow-1 text-white">
-                    <div class="row align-content-start mx-2">
-                        <div class="col-12 col-md-4 col-lg-3 order-md-3 py-4">
-                            <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-outline-light mx-2 text-center">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6 py-4">
-                            <div>
-                                <Span class="fs-1">Boolean</Span>
-                                <span>Piano blaze</span>
+                <!-- MAIN -->
+                <main class="d-flex flex-grow-1 flex-column">
+                    <!-- CONTENT HEADER -->
+                    <section class="content__header text-white">
+                        <div class="row align-content-start mx-2">
+                            <div class="col-12 col-md-4 col-lg-3 order-md-3 py-4">
+                                <span>Nuovo Studente</span>
+                                <button type="button" class="btn btn-outline-light mx-2 text-center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
                             </div>
-                            <div>
-                                <span class="blue_highlight">3 app</span>
-                                <span class="d-inline-block">>></span>
-                                <span class="d-lg-none blue_highlight">+</span>
-                                <span class="d-none d-lg-inline-block blue_highlight">Boolean mobile app</span>
-                                <span class="d-none d-lg-inline-block blue_highlight">Boolean web app</span>
-                                <span class="d-none d-lg-inline-block blue_highlight">Boolean blog app</span>
+                            <div class="col-12 col-md-4 col-lg-6 py-4">
+                                <div>
+                                    <Span class="fs-1">Boolean</Span>
+                                    <span>Piano blaze</span>
+                                </div>
+                                <div>
+                                    <span class="blue_highlight">3 app</span>
+                                    <span class="d-inline-block">>></span>
+                                    <span class="d-lg-none blue_highlight">+</span>
+                                    <span class="d-none d-lg-inline-block blue_highlight">Boolean mobile app</span>
+                                    <span class="d-none d-lg-inline-block blue_highlight">Boolean web app</span>
+                                    <span class="d-none d-lg-inline-block blue_highlight">Boolean blog app</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 py-4">
+                                <div>Studenti online negli ultimi 30 minuti</div>
+                                <div class="fs-2">125</div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-3 py-4">
-                            <div>Studenti online negli ultimi 30 minuti</div>
-                            <div class="fs-2">125</div>
-                        </div>
-                    </div>
-
-                </section>
-            </main>
+                    </section>
+                    <!-- CONTENT -->
+                    <section>
+                        <div>ciao</div>
+                    </section>
+                </main>
+            </div>
         </div>
     </body>
 </html>
