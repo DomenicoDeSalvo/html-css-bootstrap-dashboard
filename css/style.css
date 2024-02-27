@@ -8,6 +8,7 @@ a{
 
 #app{
     height: 100vh;
+    max-width: 100%;
 }
 
 :root{
@@ -89,6 +90,12 @@ a{
 
 /* MAIN */
 
+.main__section,
+.ms_container,
+.ms_row{
+    height: 100%;
+}
+
 /* HEADER */
 
 .side_bar{
@@ -110,6 +117,32 @@ a{
 .side_bar__list{
     height: 100%;
 }
+
+.side_bar a:hover{
+    background-color: lightgrey;
+}
+
+/* CONTENT HEADER */
+
+.content__header{
+    color: white;
+    background-color: #1B72E8;
+    overflow-y: auto;
+}
+
+.blue_highlight{
+    background-color: #165BBA;
+    border-radius: 20px;
+    line-height: 16px;
+    padding: 4px 10px;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
 
 
 
