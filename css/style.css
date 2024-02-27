@@ -150,6 +150,7 @@ a{
     text-align: center;
     border-radius: 8px;
     color: white;
+    font-size: 12px;
     
 }
 
@@ -171,6 +172,23 @@ a{
 text-decoration: underline;
 color: blue;
 }
+
+.data__card img{
+    max-width: 250px;
+}
+
+@media screen and (min-width:768px) {
+    .data__card img{
+        max-width: 500px;
+    }
+}
+
+/* OFFCANVAS */
+
+.offcanvas{
+    width: 100%;
+}
+
 
 
 
